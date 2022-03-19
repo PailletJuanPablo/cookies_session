@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Titulo</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+
+  <form method="POST">
+
+    <input name="volumen" placeholder="Ingresar volumen">
+
+    <button> Enviar </button>
+
+  </form>
+
+  <% if(locals.volumen) { %>
+    <h2> El volumen del usuario es <%= volumen %>
+    </h2>
+    <% } %>
+
+</body>
+
+</html>
